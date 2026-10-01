@@ -1,59 +1,38 @@
-# AI Career Copilot – AI Resume Analyzer
+# AI Career Copilot (AI Resume Analyser)
 
-AI Career Copilot is a full-stack Python and Flask web application that analyzes resumes using AI and provides personalized career guidance based on a user's target job role.
+A full-stack Python & Flask application inspired by Sagar Chouksey's video tutorial, styled in an ultra-sleek **Black Theme**.
 
-## 🚀 Features
+---
 
-* 📄 Upload and parse resumes in PDF, DOCX, and TXT formats
-* 🤖 AI-powered resume analysis using the OpenAI API
-* 🎯 Target-role based career analysis
-* 🛠️ Extracts existing technical skills from resumes
-* 📚 Identifies missing skills required for the target role
-* 🗺️ Generates a step-by-step learning roadmap
-* 💼 Provides role-specific technical interview questions
-* 🔐 User registration and login authentication
-* 🗄️ SQLite database for storing users and analysis history
-* 📊 View previous resume analyses through the history section
-* 🔒 Password hashing for secure authentication
-* 🌐 Flask-based web application
+## 🌟 Features
 
-## 🛠️ Tech Stack
+- **User Authentication**: Login & Signup system with SQLite database storage and password hashing.
+- **Pre-configured Demo Account**: `sagar@microsoft.com` / `password123`.
+- **Resume Parsing**: Supports `.pdf`, `.docx`, and plain text.
+- **Resume & Role Match Output**:
+  - **Skills :** Technical skills detected from the candidate's resume.
+  - **New skills :** Missing skills required to become the target role.
+  - **Interview :** Tailored technical and system design interview questions.
+  - **Project :** Recommended hands-on portfolio projects with tech stacks.
+- **History Tracking**: Automatically saves past analyses for each user.
 
-* Python
-* Flask
-* OpenAI API
-* SQLite
-* PyPDF2
-* python-docx
-* HTML/CSS
-* JSON
-* python-dotenv
+---
 
-## 🔄 How It Works
+## 🚀 How to Run
 
-1. User creates an account or logs in.
-2. User uploads a resume or pastes resume text.
-3. The application extracts text from the resume.
-4. User selects a target career role.
-5. The resume is analyzed using the OpenAI API.
-6. The system identifies:
+1. Open your terminal in this directory:
+   ```bash
+   cd "C:\Users\Admin\Documents\ai resume analyser"
+   ```
 
-   * Existing Skills
-   * Missing Skills
-   * Learning Roadmap
-   * Interview Questions
-7. The analysis is saved to the user's history for future reference.
+2. Run the application:
+   ```bash
+   python app.py
+   ```
 
-## 🎯 Project Goal
+3. Open your browser:
+   👉 **`http://127.0.0.1:5000`**
 
-The goal of AI Career Copilot is to help students and job seekers understand their current skill set, identify gaps for a desired career role, and receive a structured roadmap for improving their technical skills and interview preparation.
-
-## 📌 Future Improvements
-
-* Resume scoring and ATS analysis
-* Job description matching
-* Job recommendation system
-* LinkedIn profile analysis
-* Skill-based project recommendations
-* Progress tracking
-* Deployment on cloud platforms
+4. Sign in with the demo account:
+   - **Email:** `sagar@microsoft.com`
+   - **Password:** `password123`
